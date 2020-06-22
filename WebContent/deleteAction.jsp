@@ -4,22 +4,25 @@
 <%@page import = "com.javaex.dao.GuestDao" %>
     
 <%
-	String no = request.getParameter("no");
-	String pw = request.getParameter("password");
-	GuestDao dao = new GuestDao();
-	int password = dao.password(Integer.parseInt(no));
-	int inputNum = Integer.parseInt(pw);
+	int no = Integer.parseInt(request.getParameter("no"));
+	String inputNum = request.getParameter("password");
 	
-	if(password == inputNum){
+	System.out.println(no);
+	System.out.println(inputNum);
+
+	GuestDao dao = new GuestDao();
+	int num = dao.delete(no, inputNum);
+	
+	if(num == 1){
 		response.sendRedirect("./main.jsp");
 	}else{%>
-		<script type="text/javascript">
-
-		  alert("비밀번호가 틀렸습니다.");
-		  document.location.href="./main.jsp";
-
+		<script>
+		alert("비밀번호가 틀렸습니다.");
+		document.location.href = "./main.jsp";
 		</script>
- <%	}%>
+	<%}
+	
+%>
 <!DOCTYPE html>
 <html>
 <head>

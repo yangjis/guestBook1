@@ -1,7 +1,5 @@
 package com.javaex.dao;
 
-import com.javaex.vo.GuestVo;
-
 public class testDao {
 	public static void main(String[] args) {
 		GuestDao dao = new GuestDao();
@@ -10,5 +8,7 @@ public class testDao {
 		//System.out.println(dao.password(1));
 	
 		//System.out.println(dao.addList(new GuestVo("asdf","1234","1234")));
+		
+		//System.out.println(dao.delete(1, "1234"));
 	}
 }
