@@ -18,7 +18,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action = "./addList.jsp" mathod = "get">
+	<form action = "./addList.jsp" method = "get">
 	<table border="1" >
 		<tbody style = "width: 600px;">
 			<tr>
