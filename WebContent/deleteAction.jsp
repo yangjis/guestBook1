@@ -20,9 +20,7 @@
 		alert("비밀번호가 틀렸습니다.");
 		document.location.href = "./main.jsp";
 		</script>
-	<%}
-	
-%>
+	<%}%>
 <!DOCTYPE html>
 <html>
 <head>
