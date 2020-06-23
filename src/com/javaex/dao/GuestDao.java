@@ -18,7 +18,7 @@ public class GuestDao {
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
 	private String id = "webdb";
-	private String pw = "1234";
+	private String pw = "webdb";
 
 	private void getConnection() {
 		try {
